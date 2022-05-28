@@ -1,0 +1,512 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("../media/wp.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ai-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 850px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+}
+
+.btn,
+button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(70, 18, 18, 0.804);
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: brown;
+}
+
+.edit {
+  background-color: #2fff74;
+  color: black;
+}
+
+.edit:hover {
+  background-color: green;
+}
+
+.delete {
+  padding: 0.8rem 1.2rem;
+  background-color: red;
+  color: black;
+}
+
+.delete:hover {
+  background-color: #830404;
+}
+
+@media screen and (max-width: 800px) {
+  .delete {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.header {
+  background-color: rgba(126, 36, 36, 0.603);
+  padding: 2rem;
+}
+
+.header .h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fbfafa;
+  text-decoration: none;
+}
+
+.header .h1:hover {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 1.5rem;
+  }
+  .header .h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    padding: 1rem;
+  }
+  .header .h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.main {
+  text-align: center;
+  color: white;
+  padding: 10rem 0;
+}
+
+.main h2 {
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  font-size: 1rem;
+}
+
+.main .move-left {
+  -webkit-animation: moveleft 3s ease 1 normal forwards;
+          animation: moveleft 3s ease 1 normal forwards;
+}
+
+@-webkit-keyframes moveleft {
+  from {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(-360px);
+            transform: translateX(-360px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.main .move-down {
+  -webkit-animation: movedown 3s ease 1 normal backwards;
+          animation: movedown 3s ease 1 normal backwards;
+}
+
+@-webkit-keyframes movedown {
+  from {
+    -webkit-transform: translateY(-480px);
+            transform: translateY(-480px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movedown {
+  from {
+    -webkit-transform: translateY(-480px);
+            transform: translateY(-480px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+form {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+form h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}
+
+form div {
+  text-align: left;
+}
+
+form label {
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  outline: black;
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    padding: 0.5rem;
+    margin: 0 auto;
+    max-width: 200px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  form h2 {
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+  }
+  form label {
+    font-size: 0.8rem;
+  }
+  form input {
+    width: 100%;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1fr;
+}
+
+.grid .box {
+  background-color: rgba(255, 255, 255, 0.63);
+  font-weight: 500;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.grid p {
+  font-size: 2rem;
+}
+
+.grid span {
+  font-weight: 600;
+}
+
+.width-60 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+}
+
+.width-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.width-30 hr {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1fr;
+  }
+  .grid .box {
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 0.6rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  .grid p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1fr;
+  }
+  .grid .box {
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 0.4rem;
+    margin-top: 0.8rem;
+    font-size: 0.6rem;
+    margin-right: 0.4rem;
+  }
+  .grid p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */

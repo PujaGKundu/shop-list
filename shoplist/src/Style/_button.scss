@@ -1,0 +1,41 @@
+.btn,
+button {
+  outline: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  background-color: rgba(70, 18, 18, 0.804);
+  color: white;
+  text-decoration: none;
+  &:hover {
+    background-color: black;
+  }
+}
+
+.active {
+  background-color: brown;
+}
+
+.edit {
+  background-color: rgb(47, 255, 116);
+  color: black;
+  &:hover {
+    background-color: green;
+  }
+}
+
+.delete {
+  padding: 0.8rem 1.2rem;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  &:hover {
+    background-color: rgb(131, 4, 4);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .delete {
+    padding: 0.5rem 1rem;
+  }
+}

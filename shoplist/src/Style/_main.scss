@@ -1,0 +1,35 @@
+.main {
+  text-align: center;
+  color: white;
+  padding: 10rem 0;
+  h2 {
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .move-left {
+    animation: moveleft 3s ease 1 normal forwards;
+  }
+  @keyframes moveleft {
+    from {
+      transform: translateX(-360px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .move-down {
+    animation: movedown 3s ease 1 normal backwards;
+  }
+  @keyframes movedown {
+    from {
+      transform: translateY(-480px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
